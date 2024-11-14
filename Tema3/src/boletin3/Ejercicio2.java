@@ -11,10 +11,7 @@ public class Ejercicio2 {
 		double notas[][] = new double[4][5];
 		double min = Double.MAX_VALUE;
 		double max = Double.MIN_VALUE;
-		double media1;
-		double media2;
-		double media3;
-		double media4;
+		double media;
 
 		// Gracias a dos bucles, el usuario puede introducir las notas de los alumnos
 		for (int fila = 0; fila < notas.length; fila++) {
@@ -35,9 +32,29 @@ public class Ejercicio2 {
 			}
 			System.out.println();
 		}
-		min = notas[4][5];
-		System.out.println("La nota mínima es: " + min);
+		for (int fila = 0; fila < notas.length; fila++) {
+			min = notas[fila][0];
+			max = notas[fila][0];
+			double suma = 0;
 
+			for (int col = 0; col < notas[fila].length; col++) {
+				double nota = notas[fila][col];
+				suma += nota;
+
+				if (nota < min) {
+					min = nota;
+				}
+				if (nota > max) {
+					max = nota;
+				}
+			}
+
+			media = suma / notas[fila].length;
+
+			System.out.println("\nResultados de Alumno " + (fila + 1) + ":");
+			System.out.println("Nota mínima: " + min);
+			System.out.println("Nota máxima: " + max);
+			System.out.println("Nota media: " + media);
+		}
 	}
-
 }
