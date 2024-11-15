@@ -4,7 +4,7 @@ public class Ejercicio1 {
 
 	public static void main(String[] args) {
 		
-		int tabla[] = new int[5];
+		int tabla[] = new int[6];
 		
 		
 	}

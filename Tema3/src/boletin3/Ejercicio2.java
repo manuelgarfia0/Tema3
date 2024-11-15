@@ -38,6 +38,10 @@ public class Ejercicio2 {
 			min = notas[fila][0];
 			max = notas[fila][0];
 			suma = 0;
+		for (int fila = 0; fila < notas.length; fila++) {
+			min = notas[fila][0];
+			max = notas[fila][0];
+			double suma = 0;
 
 			for (int col = 0; col < notas[fila].length; col++) {
 				double nota = notas[fila][col];
