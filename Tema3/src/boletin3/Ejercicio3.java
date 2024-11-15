@@ -7,16 +7,19 @@ public class Ejercicio3 {
 	public static void main(String[] args) {
 		// Creo un escaner para que el usuario pueda introducir los datos que se le pide
 		Scanner teclado = new Scanner(System.in);
+		// Creo las variables de fila y columnas y la tabla
+		int fila;
+		int col;
+		int[][] tabla;
 
 		// Le pido al usuario el número de filas y columnas
 		System.out.print("Introduce el número de filas: ");
-		int fila = teclado.nextInt();
+		fila = teclado.nextInt();
 
 		System.out.print("Introduce el número de columnas: ");
-		int col = teclado.nextInt();
+		col = teclado.nextInt();
 
-		// Creo la tabla
-		int[][] tabla = new int[fila][col];
+		tabla = new int[fila][col];
 
 		// Relleno la tabla con los valores 10 * i + j
 		for (int i = 0; i < fila; i++) {

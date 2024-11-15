@@ -12,6 +12,7 @@ public class Ejercicio2 {
 		double min = Double.MAX_VALUE;
 		double max = Double.MIN_VALUE;
 		double media;
+		double suma;
 
 		// Gracias a dos bucles, el usuario puede introducir las notas de los alumnos
 		for (int fila = 0; fila < notas.length; fila++) {
@@ -36,7 +37,7 @@ public class Ejercicio2 {
 		for (int fila = 0; fila < notas.length; fila++) {
 			min = notas[fila][0];
 			max = notas[fila][0];
-			double suma = 0;
+			suma = 0;
 
 			for (int col = 0; col < notas[fila].length; col++) {
 				double nota = notas[fila][col];
