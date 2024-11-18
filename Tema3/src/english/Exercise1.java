@@ -3,7 +3,7 @@ package english;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Ejercise1 {
+public class Exercise1 {
 
 	public static void main(String[] args) {
 		// We create a scanner to let the user introduce the numbers of the array
