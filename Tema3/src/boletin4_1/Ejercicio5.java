@@ -1,9 +1,9 @@
-package boletin4;
+package boletin4_1;
 
 public class Ejercicio5 {
 
 	public static void main(String[] args) {
-		
+
 		int[] t = { 1, 2, 3, 2, 4, 2, 5 };
 		int valor = 2;
 
@@ -11,19 +11,19 @@ public class Ejercicio5 {
 
 		System.out.println("Índices donde se encuentra el valor " + valor + ":");
 		for (int indice : indices) {
-			System.out.println(indice);
+			System.out.print(indice + " ");
 		}
 	}
 
 	static int[] buscarTodos(int t[], int valor) {
-		int tamaño = numVeces(t, valor); // Cantidad de veces que aparece el valor
+		int tamaño = numVeces(t, valor);
 		int[] tabla = new int[tamaño];
 
 		if (tamaño == 0) {
-			return tabla; // Devuelve una tabla vacía si no se encuentra el valor
+			return tabla;
 		}
 
-		int posicion = 0; // Índice para llenar el arreglo `tabla`
+		int posicion = 0;
 		for (int i = 0; i < t.length; i++) {
 			if (t[i] == valor) {
 				tabla[posicion++] = i;
