@@ -5,27 +5,23 @@ import java.util.Arrays;
 public class Ejercicio6 {
 
 	public static void main(String[] args) {
+		int[] tabla = { 10, 1, 5, 8, 9, 2 };
 
-		int[] t = { 10, 1, 5, 8, 9, 2 };
-		int numElementos = 4;
+		int resultado[] = suma(tabla, 3);
 
-		int[] tabla = suma(t, numElementos);
-
-		System.out.println(Arrays.toString(tabla));
+		System.out.println(Arrays.toString(resultado));
 	}
 
 	static int[] suma(int t[], int numElementos) {
 
-		int[] tabla = new int[numElementos];
-		int cont = 0;
+		int[] result = new int[t.length - numElementos + 1];
 
-		for (int i = 0; i < tabla.length; i++) {
-			for (int j = 0; j <= i; j++) {
-				cont += j;
+		for (int i = 0; i < result.length; i++) {
+			for (int j = i; j < i + numElementos; j++) {
+				result[i] += t[j];
 			}
-			tabla[i] = cont;
 		}
 
-		return tabla;
+		return result;
 	}
 }
