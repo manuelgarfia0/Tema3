@@ -3,6 +3,7 @@ package boletin4_2;
 public class Ejercicio2 {
 
 	public static void main(String[] args) {
+
 		int tabla[][] = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 		int res[][] = transposicion(tabla);
 
