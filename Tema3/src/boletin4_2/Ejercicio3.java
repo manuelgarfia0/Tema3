@@ -15,21 +15,8 @@ public class Ejercicio3 {
 	static boolean esSimetrica(int[][] matriz) {
 		boolean simetrica = true;
 
-		int filas = matriz.length;
-		for (int[] fila : matriz) {
-			if (fila.length != filas) {
-				simetrica = false;
-			}
-		}
-
-		for (int i = 0; i < filas && simetrica; i++) {
-			for (int j = 0; j < i && simetrica; j++) {
-				if (matriz[i][j] != matriz[j][i]) {
-					simetrica = false;
-				}
-			}
-		}
-
+		
+		
 		return simetrica;
 	}
 }
