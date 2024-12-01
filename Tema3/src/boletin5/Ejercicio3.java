@@ -11,24 +11,15 @@ public class Ejercicio3 {
 
 		desordenarTabla(tabla);
 
-		System.out.println(Arrays.toString(tabla));
-
-	}
-
-	static void desordenarTabla(int[][] tabla) {
-
-		Random random = new Random();
-
-		int posInicial;
-		int aux;
-
 		for (int i = 0; i < tabla.length; i++) {
-			posInicial = random.nextInt(0, tabla.length);
-			aux = tabla[i];
-			tabla[i] = tabla[posInicial];
-			tabla[posInicial] = aux;
+			System.out.println(Arrays.toString(tabla[i]));
 		}
 
 	}
 
+	static void desordenarTabla(int[][] tabla) {
+		Random random = new Random();
+
+		
+	}
 }
