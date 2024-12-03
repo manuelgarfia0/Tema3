@@ -19,14 +19,14 @@ public class Ejercicio2 {
 
 		Random random = new Random();
 
-		int posInicial;
+		int posAleatoria;
 		int aux;
 
 		for (int i = 0; i < tabla.length; i++) {
-			posInicial = random.nextInt(0, tabla.length);
+			posAleatoria = random.nextInt(0, tabla.length);
 			aux = tabla[i];
-			tabla[i] = tabla[posInicial];
-			tabla[posInicial] = aux;
+			tabla[i] = tabla[posAleatoria];
+			tabla[posAleatoria] = aux;
 		}
 
 	}
