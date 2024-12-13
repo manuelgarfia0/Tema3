@@ -13,7 +13,8 @@ public class Ejercicio3 {
 		System.out.println("Introduce una frase: ");
 		fraseUsuario = scanner.nextLine();
 		// Llamamos a la función con la frase que introduce el usuario
-		espaciosBlancos(fraseUsuario);
+		// Imprimimos el contador
+		System.out.println(espaciosBlancos(fraseUsuario));
 	}
 
 	static int espaciosBlancos(String frase) {
@@ -26,8 +27,6 @@ public class Ejercicio3 {
 				contador++;
 			}
 		}
-		// Imprimimos el contador
-		System.out.println(contador);
 		// Devolvemos el resultado
 		return contador;
 	}
