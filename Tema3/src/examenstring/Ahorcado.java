@@ -8,7 +8,6 @@ public class Ahorcado {
 	// Variables globales
 	static final String[] palabras = { "humanidad", "persona", "hombre", "mujer", "individuo", "cuerpo", "pierna",
 			"cabeza", "brazo", "familia" };
-	static final int NUMINTENTOS = 7;
 	static String palabraSecreta;
 	static String palabraPista;
 	static String noAcertadas = "";
@@ -77,7 +76,7 @@ public class Ahorcado {
 		Scanner scanner = new Scanner(System.in);
 		generaPalabra();
 		pintaPista();
-		int intentosRestantes = NUMINTENTOS;
+		int intentosRestantes = 7;
 		boolean juegoTerminado = false;
 
 		while (!juegoTerminado && intentosRestantes > 0) {
