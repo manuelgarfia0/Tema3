@@ -1,9 +1,9 @@
-package examenstring;
+package examen;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class Ahorcado {
+public class String22_23 {
 
 	// Variables globales
 	static final String[] palabras = { "humanidad", "persona", "hombre", "mujer", "individuo", "cuerpo", "pierna",

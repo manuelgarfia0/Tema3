@@ -1,4 +1,4 @@
-package englishArray;
+package englisharray;
 
 public class Exercise2 {
 
