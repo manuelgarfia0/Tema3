@@ -1,4 +1,4 @@
-package collections;
+package collections1;
 
 public class Ejercicio8 {
 

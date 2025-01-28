@@ -1,4 +1,4 @@
-package stringParte1;
+package string1;
 
 public class Ejercicio17 {
 

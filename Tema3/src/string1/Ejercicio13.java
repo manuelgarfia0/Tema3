@@ -1,4 +1,4 @@
-package stringParte1;
+package string1;
 
 import java.util.Arrays;
 import java.util.Scanner;

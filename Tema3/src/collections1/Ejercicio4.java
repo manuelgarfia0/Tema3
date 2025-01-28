@@ -1,4 +1,4 @@
-package collections;
+package collections1;
 
 import java.util.Random;
 import java.util.TreeSet;

@@ -1,4 +1,4 @@
-package collections;
+package collections1;
 
 import java.util.Map;
 import java.util.Scanner;
@@ -7,27 +7,25 @@ import java.util.TreeMap;
 public class Ejercicio9 {
 
 	public static void main(String[] args) {
-		// Scanner para leer de consola
+
 		Scanner reader = new Scanner(System.in);
 
-		// Variable que se va a corresponder con la clave a almacenar
+		// Declaro la variable que se va a corresponder con la clave a almacenar
 		int numero;
 
-		// Variable donde se va a almacenar el valor del mapa
+		// Declaro la variable donde se va a almacenar el valor del mapa
 		Integer valor;
 
-		// Variable para almacenar la respuesta del usuario sobre si quiere volver a
-		// introducir números
+		// Declaro la variable para almacenar la respuesta del usuario sobre si quiere
+		// volver a introducir números
 		String repetir;
 
-		// Mapa donde almacenar los números del Euromillón
+		// Creamos una lista de cadenas que ordena por insercción
 		TreeMap<Integer, Integer> numeros = new TreeMap<>();
 
-		// Mapa donde almacenar las estrellas del Euromillón
+		// Creamos una lista de cadenas que ordena por insercción
 		TreeMap<Integer, Integer> estrellas = new TreeMap<>();
 
-		// While que se repetirá mientras el usuario quiere seguir introduciendo
-		// apuestas
 		do {
 			// Pedimos 5 números
 			System.out.println("Introduzca 5 números:");
@@ -49,6 +47,7 @@ public class Ejercicio9 {
 
 			System.out.println("¿Quiere introducir otra apuesta?");
 			repetir = reader.next();
+			// Mientras que el usuario responda si el bucle continuará
 		} while (repetir.equals("si"));
 
 		reader.close();
