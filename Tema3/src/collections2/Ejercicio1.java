@@ -14,15 +14,17 @@ public class Ejercicio1 {
 		ArrayList<Integer> numeros = new ArrayList<Integer>();
 		// Declaro una variable para los números que tengo que introducir
 		int numero;
-		// Mientras que la lista no introduzca 10
+		// Introducimos números entre el 1 y el 10 en la lista
 		while (numeros.size() < 10) {
 			numero = random.nextInt(1, 11);
 			numeros.add(numero);
 		}
-		System.out.println(numeros);
-		List<Integer> desordena = new ArrayList<Integer>(numeros);
-		Collections.shuffle(desordena);
-		System.out.println(desordena);
+		// Mostramos la lista
+		System.out.println("Lista: " + numeros);
+		// Mezclamos la lista
+		Collections.shuffle(numeros);
+		// Mostramos la lista otra vez cambiada de orden
+		System.out.println("Lista desordenada: " + numeros);
 	}
 
 }
